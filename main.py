@@ -14,6 +14,7 @@ from PIL import Image
 from PIL import ImageEnhance
 
 from requests import session, post, adapters
+import urllib3, ssl
 adapters.DEFAULT_RETRIES = 5
 
 class CustomHttpAdapter (adapters.HTTPAdapter):
